@@ -16,6 +16,12 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 
+import {TypedTextModule} from 'ngx-typed-text';
+// import { TypewriterModule } from "ng2-typewriter";
+// import { TypewriterService, TypewriterContent } from "ng2-typewriter";
+import Typewriter from 't-writer.js'
+
+import {MatTabsModule} from '@angular/material/tabs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,9 +40,15 @@ import { MatListModule } from '@angular/material/list';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    TypedTextModule,
+    MatTabsModule
+    //Typewriter
   ],
-  providers: [],
+  providers: [
+    // TypewriterService, 
+    // TypewriterContent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

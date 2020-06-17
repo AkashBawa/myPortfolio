@@ -1,42 +1,45 @@
 .sidenav-container {
   height: 100%;
 }
-
 .sidenav {
   width: 200px;
 }
-
 .sidenav .mat-toolbar {
   background: inherit;
 }
-
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
   z-index: 1;
 }
-
 .spacer {
   flex: 1 1 auto;
 }
 mat-toolbar {
-  background-color :#3f0d12;
-  background-image :linear-gradient(315deg, #3f0d12 0%, #a71d31 74%) !important;
-
+  // background-color :#3f0d12;
+  // background-image :linear-gradient(315deg, #3f0d12 0%, #a71d31 74%) !important
+  background-color:rgba(0, 0, 0, 0.5)!important;
   a{
     display: inline-block;
     margin: 0 10px;
     color: white;
     text-decoration: none;
-  }
-  
+  } 
 }
-
-
 .hidden {
   display: none;
 }
 .right-absolute{
   right: 0;
   position: absolute;
+}
+.under {
+  text-decoration: underline !important;
+  color : red
+}
+.mat-nav-list a.active {
+  background: blue;
+}
+.active{
+  text-decoration : underline
 }
