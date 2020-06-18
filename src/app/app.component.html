@@ -1,12 +1,21 @@
-<app-main-nav>
-  <div>
-    <app-first-home #home class="first-page"></app-first-home>
+<app-main-nav (messageEvent)="receivemessage($event)">
+  <div #home>
+    <app-first-home  class="first-page"></app-first-home>
   </div>
-  <div>
-    <app-experience #experience></app-experience>
+  <div #experience>
+    <app-experience></app-experience>
   </div>
   <div #project>
-    <app-project ></app-project>
+    <app-project></app-project>
+  </div>
+  <div #ability>
+    <app-ability></app-ability>
+  </div>
+  <div #skills>
+    <app-skills></app-skills>
+  </div>
+  <div #contactme>
+    <app-contact-me></app-contact-me>
   </div>
 </app-main-nav>
 

@@ -15,13 +15,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-
 import {TypedTextModule} from 'ngx-typed-text';
-// import { TypewriterModule } from "ng2-typewriter";
-// import { TypewriterService, TypewriterContent } from "ng2-typewriter";
 import Typewriter from 't-writer.js'
-
+import {MainService} from './main.service'
 import {MatTabsModule} from '@angular/material/tabs';
+import { AbilityComponent } from './pages/ability/ability.component';
+import { SkillsComponent } from './pages/skills/skills.component';
+import { ContactMeComponent } from './pages/contact-me/contact-me.component';
+import {MatCardModule} from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,10 @@ import {MatTabsModule} from '@angular/material/tabs';
     TopNavBarComponent,
     ExperienceComponent,
     ProjectComponent,
-    MainNavComponent
+    MainNavComponent,
+    AbilityComponent,
+    SkillsComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,
@@ -42,12 +46,14 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatIconModule,
     MatListModule,
     TypedTextModule,
-    MatTabsModule
+    MatTabsModule,
+    MatCardModule
     //Typewriter
   ],
   providers: [
     // TypewriterService, 
     // TypewriterContent
+    MainService
   ],
   bootstrap: [AppComponent]
 })

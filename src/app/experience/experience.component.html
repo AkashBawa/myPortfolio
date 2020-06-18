@@ -1,19 +1,71 @@
-<p>experience works!</p>
-<p>experience works!</p>
-<p>experience works!</p>
-<p>experience works!</p>
-<p>experience works!</p>
-<p>experience works!</p>
-<p>experience works!</p>
-<p>experience works!</p>
-<p>experience works!</p>
-<p>experience works!</p>
-<p>experience works!</p>
-<p>experience works!</p>
-<p>experience works!</p>
-<p>experience works!</p>
-<p>experience works!</p>
-<p>experience works!</p>
-<p>experience works!</p>
-<p>experience works!</p>
-<p>experience works!</p>
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 mt-2" *ngFor="let work of myexperience">  <!--Apply loop here-->
+                    <div class="row" style="padding: 5px;">
+                        <mat-card class=" col-12 example-card ">
+                            <mat-card-content>
+                                <div class="row">
+                                    <div class="col-md-4 align-center">
+                                        <img
+                                            src="{{work.compLogo}}"
+                                            class="company-img"
+                                        >
+                                    </div>
+                                    <div class="col-md-8 ">
+                                        <div class="align-center">
+                                            <h4>{{work.name}}</h4>
+                                            <div>
+                                                <label>
+                                                {{work.from}} | {{work.to}} | 
+                                                    {{work.duration}}</label>
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li *ngFor="let line of work.aboutWork">
+                                                {{line}}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <div class="col-md-4 align-center">
+                                    <button mat-button>View Credential</button>
+                                </div>
+                            </mat-card-actions>
+                        </mat-card>
+                          
+                    </div>
+                </div>
+                <!-- <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            abcd
+                        </div>
+                        <div class="col-md-4">
+                            efgh    
+                        </div>
+                        <div class="col-md-4">
+                            adfedf
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            abcd
+                        </div>
+                        <div class="col-md-4">
+                            efgh    
+                        </div>
+                        <div class="col-md-4">
+                            adfedf
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
