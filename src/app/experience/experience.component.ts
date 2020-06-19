@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-experience',
@@ -7,38 +7,77 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
-  constructor() { }
+
+  constructor() { 
+  }
 
   ngOnInit() {
+    this.onResize(event)
   }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    console.log("width event")
+    if(window.innerWidth < 768) {
+      this.horizontal = false
+    } else {
+      this.horizontal = true
+    }
+  }
+  horizontal : boolean = true;
+ 
 
   myexperience = [
     {
-      name: "Dots",
+      name: "DOTS",
       compLogo : "./assets/experience/dots.jpeg",
-      from : "june-2019",
-      to : "july-2019",
+      present : true,
+      from : "May-2020",
+      to : "",
+      location : "Mohali, Punjab",
       duration : "2 months",
-      aboutWork : ["My first company", "My first company", "My first company"],
-      credential : "Address of file"
+      credential : "https://internshala.com/student/certificate/34824057/82818E0C-8EAF-BC2A-4AA9-C437E5857CED",
+      aboutWork : [
+        "Worked on new emerging technology MEAN stack", 
+        "Build the live project called 'Healthcrum.com'",
+        "Mr. Bhola Kumar is my project manager"],
+      project : [`Created live project HealthCrum which basically act as an intermediate between 
+        patient and the doctor with proper`, 
+        `Utilize Node.js for backend and Angular 8 for frontend `
+      ]
+    },
+    {
+      name : "Impinge",
+      compLogo : "./assets/experience/impinge.jpg",
+      present : false,
+      from : "june - 2019",
+      to : "july - 2019",
+      location : "Mohali, Punjab",
+      duration : "2 months",
+      credential : "./assets/impingCertificate.jpg",
+      aboutWork : ["Impinge is well-established MNC and give opportunity to the interns to explor there skills",
+       "Learn and explor basic to advance concept of MEAN stack",
+        "Mr. Shubham was my mentor and who has a great experience in many MNC "],
+      project : [`Build tourism project in which user can select his/her tour plan according 
+                  to their wish and has proper login and signup page for authentication`]
     },
     {
       name : "Upwork",
       compLogo : "./assets/experience/upwork.jpeg",
-      from : "june-2019",
-      to : "july-2019",
+      present : true,
+      from : "Nov-2018",
+      to : "",
+      location : "Mohali, Punjab",
       duration : "2 months",
-      aboutWork : ["My first company", "My first company", "My first company"],
-      credential : "Address of file"
-    },
-    {
-      name : "Impinge",
-      compLogo : "./assets/experience/imping.jpeg",
-      from : "june - 2019",
-      to : "july - 2019",
-      duration : "2 months",
-      aboutWork : ["My first company", "My first company", "My first company"],
-      credential : "Address of file"
+      aboutWork : ["Upwork is a freelencer website",
+       "Meet different people from all over the world", 
+       "Widen my horizon"],
+      credential : "http://www.upwork.com/",
+      project : [`Here worked on project of differnet categories dealing with web-development ,
+      some machine learning and many more.`]
     }
   ]
+  onCredential(index : number) {
+    window.open(this.myexperience[index].credential)
+  }
 }

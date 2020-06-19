@@ -1,37 +1,91 @@
 <div class="container-fluid">
-    <div class="row ">
+    <div class="row main">
         <div class="col-12">
+            <div class="row mt-2">
+                <div class="col-12 heading">
+                    <h3>
+                        My Experience
+                    </h3>
+                </div>
+            </div>
             <div class="row">
-                <div class="col-12 mt-2" *ngFor="let work of myexperience">  <!--Apply loop here-->
-                    <div class="row" style="padding: 5px;">
-                        <mat-card class=" col-12 example-card ">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 small-margin" >  <!--Apply loop here-->
+                    <div class="row mt-2 mb-1"  *ngFor="let work of myexperience; let i = index">
+                        <mat-card class=" col-12 mycard">
                             <mat-card-content>
                                 <div class="row">
                                     <div class="col-md-4 align-center">
-                                        <img
-                                            src="{{work.compLogo}}"
-                                            class="company-img"
-                                        >
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <img
+                                                src="{{work.compLogo}}"
+                                                class="company-img"
+                                            >
+                                            </div>
+                                            <div 
+                                            class="col-12 horizontal-button credential"
+                                            *ngIf="horizontal"
+                                            >
+                                                <button 
+                                                class="btn"
+                                                (click)=onCredential(i)
+                                                >View Credential</button>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-md-8 ">
                                         <div class="align-center">
-                                            <h4>{{work.name}}</h4>
-                                            <div>
-                                                <label>
-                                                {{work.from}} | {{work.to}} | 
-                                                    {{work.duration}}</label>
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <h4>{{work.name}}</h4>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class=" col-md-8">
+                                                    <label>
+                                                        {{work.location}}    
+                                                    </label>
+                                                </div>
+                                                <div class=" col-md-4" *ngIf="work.present">
+                                                    <label> 
+                                                        {{work.from}} - present
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-4" *ngIf="!work.present">
+                                                    <label> 
+                                                        {{work.from}} - {{work.to}}
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
-                                        <ul>
-                                            <li *ngFor="let line of work.aboutWork">
-                                                {{line}}
-                                            </li>
-                                        </ul>
+                                        <div class="col-12">
+                                            <div class="about-work">
+                                                <label>About work</label>
+                                            </div>
+                                            <ul>
+                                                <li *ngFor="let line of work.aboutWork">
+                                                    {{line}}
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="about-work">
+                                                <label>Project</label>
+                                            </div>
+                                            <ul *ngFor="let proj of work.project">
+                                                <li> 
+                                                    {{proj}}
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </mat-card-content>
-                            <mat-card-actions>
-                                <div class="col-md-4 align-center">
+                            <mat-card-actions *ngIf="!horizontal">
+                                <div 
+                                class="col-md-4 align-center credential" 
+                                (click)=onCredential(i)>
                                     <button mat-button>View Credential</button>
                                 </div>
                             </mat-card-actions>
