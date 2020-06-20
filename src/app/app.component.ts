@@ -41,19 +41,19 @@ export class AppComponent implements OnInit {
      });
     } else if($event == "project") {
       setTimeout(() => {
-        this.project.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'start' });
+        this.project.nativeElement.scrollIntoView({ behavior: 'smooth', inline: 'start' });
      });
     } else if($event == "ability") {
       setTimeout(() => {
-        this.ability.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'start' });
+        this.ability.nativeElement.scrollIntoView({ behavior: 'smooth', inline: 'start' });
      });
     } else if($event == "skills") {
       setTimeout(() => {
-        this.skills.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'start' });
+        this.skills.nativeElement.scrollIntoView({ behavior: 'smooth', inline: 'start' });
      }); 
     }else if($event == "contactme") {
       setTimeout(() => {
-        this.contactme.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'start' });
+        this.contactme.nativeElement.scrollIntoView({ behavior: 'smooth', inline: 'start' });
      });
     }
   }

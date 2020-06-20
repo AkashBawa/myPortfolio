@@ -1,0 +1,25 @@
+.example-card{
+  margin-top: 100px;
+  background-image: linear-gradient(to right, #35184E, #F83131);
+  color: white;
+  transition : transform .2s;
+  transition-timing-function: ease-in;
+  &:hover{
+    transform: scale(0.95);
+  }
+}
+
+.image-div{
+  padding: 0 20px;
+  margin-top: -80px !important;
+  .main-image{
+    height: 160px;
+  }
+}
+.heading label {
+  font-size: smaller;
+}
+
+ul{
+  padding: 0;
+}

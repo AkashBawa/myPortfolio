@@ -12,4 +12,30 @@ export class ProjectComponent implements OnInit {
   ngOnInit() {
   }
 
+  projects = [
+    {
+      name : "Tourism",
+      uses : "MEAN Stack",
+      title : "Book you tour plan",
+      about : ["User can book there travelling plan according to their wish",
+                "Proper sign up and login for user authentication"],
+      photo : './assets/projects/healthcrum.jpg'
+    },
+    {
+      name : "Tourism",
+      uses : "MEAN Stack",
+      title : "Book you tour plan",
+      about : ["User can book there travelling plan according to their wish",
+                "Proper sign up and login for user authentication"],
+      photo : './assets/projects/quiz.jpg'
+    },
+    {
+      name : "Tourism",
+      uses : "MEAN Stack",
+      title : "Book you tour plan",
+      about : ["User can book there travelling plan according to their wish",
+                "Proper sign up and login for user authentication"],
+      photo : './assets/projects/tourism.jpg'
+    }
+  ]
 }
