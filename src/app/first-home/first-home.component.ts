@@ -23,7 +23,7 @@ export class FirstHomeComponent implements OnInit {
       deleteSpeed : 200
     })
     writer
-      .type("Akash Bawa")
+      .type("Meet Akash Bawa")
       .rest(2000)
       .start()
  }

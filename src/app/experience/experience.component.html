@@ -11,7 +11,13 @@
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-10 small-margin" >  <!--Apply loop here-->
-                    <div class="row mt-2 mb-1"  *ngFor="let work of myexperience; let i = index">
+                    <div 
+                     class="row mt-2 mb-1" 
+                     *ngFor="let work of myexperience;let i = index;let isOdd=odd;let isEven=even;" 
+                     [attr.data-aos]="isOdd ? 'fade-left' : 'fade-right'"
+                     data-aos-duration="2000"
+                     >
+                    <div>
                         <mat-card class=" col-12 mycard">
                             <mat-card-content>
                                 <div class="row">

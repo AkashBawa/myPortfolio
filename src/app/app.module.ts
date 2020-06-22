@@ -7,7 +7,9 @@ import { FirstHomeComponent } from './first-home/first-home.component';
 import { TopNavBarComponent } from './top-nav-bar/top-nav-bar.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectComponent } from './pages/project/project.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';

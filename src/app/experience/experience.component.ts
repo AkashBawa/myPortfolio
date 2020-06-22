@@ -1,9 +1,19 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-
+import { trigger, state, transition, style, animate } from '@angular/animations';
+ import * as AOS from 'AOS'
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.scss']
+  styleUrls: ['./experience.component.scss'],
+  // animations : [
+  //   trigger('fade', [
+  //      state(),
+  //     transition('void => *', [
+  //       style({ backgroundColor : "yellow", opacity : 0}),
+  //       animate(20000)
+  //     ])
+  //   ])
+  // ]
 })
 export class ExperienceComponent implements OnInit {
 
@@ -12,6 +22,8 @@ export class ExperienceComponent implements OnInit {
   }
 
   ngOnInit() {
+   // AOS.init();
+   
     this.onResize(event)
   }
 

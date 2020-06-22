@@ -1,5 +1,6 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { MainNavComponent } from './main-nav/main-nav.component';
+import * as AOS from "aos"
 
 @Component({
   selector: 'app-root',
@@ -14,8 +15,20 @@ export class AppComponent implements OnInit {
   @ViewChild('ability', {static : false}) public ability : ElementRef;
   @ViewChild('skills', {static : false}) public skills : ElementRef;
   @ViewChild('contactme', {static : false}) public contactme : ElementRef;
+
+  @HostListener('window:scroll', ['$event'])
+  onscroll(event){
+    console.log("Scroll")
+    AOS.refresh();
+  }
   ngOnInit() {
-   // this.moveToSpecificView()
+    AOS.init();
+    window.addEventListener('scroll', this.scroll, true); //third paramete
+  }
+
+  scroll(){
+   // console.log("scrolling")
+    AOS.refresh();
   }
   public moveToSpecificView(){
     setTimeout(() => {
