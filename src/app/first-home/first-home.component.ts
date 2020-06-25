@@ -7,6 +7,7 @@ import Typewriter from 't-writer.js'
   templateUrl: './first-home.component.html',
   styleUrls: ['./first-home.component.scss']
 })
+
 export class FirstHomeComponent implements OnInit {
 
   constructor() { }

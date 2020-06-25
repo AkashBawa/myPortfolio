@@ -1,3 +1,23 @@
+
+
+.main{
+ // background-image: linear-gradient(#7F5A83,#0D324D);
+  // background-color: #923cb5;
+  // background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+//   background-color: #2d3436;
+// background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+  background-color : #000000;
+  background-image : linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+}
+.first-row{
+  margin : 50px 0;
+  h1{
+    color: white;
+  }
+  span{
+    color: white;
+  }
+}
 .example-card{
   margin-top: 100px;
   background-image: linear-gradient(to right, #35184E, #F83131);
