@@ -12,19 +12,36 @@ export class FirstHomeComponent implements OnInit {
   constructor() { }
 
   @ViewChild('name', {static : true}) typewriterElement;
+  @ViewChild('aboutme', {static : true}) aboutme;
 
   ngOnInit() {
 
-    const target = this.typewriterElement.nativeElement
+    const target = this.typewriterElement.nativeElement;
     const writer = new Typewriter(target, {
-      loop: true,
+      loop: false,
       typeColor: 'White',
-      typeSpeed: 500,
+      typeSpeed: 250,
       deleteSpeed : 200
+    })
+
+    const target2 = this.aboutme.nativeElement;
+    const writer2 = new Typewriter(target2, {
+      loop : false,
+      typeColor :'white',
+      typeSpeed : 50,
     })
     writer
       .type("Meet Akash Bawa")
-      .rest(2000)
+      //.rest(2000)
+      //.then(writer2.start())
+      .then(writer2.start.bind(writer2))
       .start()
+
+    writer2
+      .type(this.myDetail)
+      //.rest(2000)
  }
+
+ myDetail = `I am a student of B-tech CSE 3rd year. After discovering my passion for web development, I couldn’t get enough. I made websites for friends and family, interned with a local business, and hired myself out as a freelancer on upwork.
+  I’m looking forward to bringing that passion to a full-time role.`
 }
