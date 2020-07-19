@@ -12,4 +12,11 @@ export class AbilityComponent implements OnInit {
   ngOnInit() {
   }
 
+  abilities = [
+    {des : "I am able to code in angular, node and express js"},
+    {des : "I am able to code in angular, node and express js"},
+    {des : "I am able to code in angular, node and express js"},
+    {des : "I am able to code in angular, node and express js"},
+    {des : "I am able to code in angular, node and express js"},
+  ]
 }

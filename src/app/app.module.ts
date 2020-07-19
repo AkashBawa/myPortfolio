@@ -25,6 +25,7 @@ import { AbilityComponent } from './pages/ability/ability.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { ContactMeComponent } from './pages/contact-me/contact-me.component';
 import {MatCardModule} from '@angular/material/card';
+import {AngularFittextModule} from 'angular-fittext';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +50,8 @@ import {MatCardModule} from '@angular/material/card';
     MatListModule,
     TypedTextModule,
     MatTabsModule,
-    MatCardModule
+    MatCardModule,
+    AngularFittextModule
     //Typewriter
   ],
   providers: [

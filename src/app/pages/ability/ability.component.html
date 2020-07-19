@@ -1,1 +1,23 @@
-<p>ability works!</p>
+<main class="mt-4">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="row first mt-4">
+          <h2>Work that I am able to done effectively</h2>
+        </div>
+        <div class="row">
+          <div class="col-12 ">
+            <div class="row ml-4 mr-2 background-white mb-2 row" 
+            *ngFor="let ability of abilities; index as i">
+              <div  class="col-12 ability-div">
+                <label>
+                  {{i + 1}}. &nbsp; {{ability.des}}
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</main>

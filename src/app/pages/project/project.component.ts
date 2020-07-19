@@ -14,43 +14,19 @@ export class ProjectComponent implements OnInit {
 
   projects = [
     {
-      name : "Tourism",
+      name : "Health Crum",
       uses : "MEAN Stack",
-      title : "Book you tour plan",
-      about : ["User can book there travelling plan according to their wish",
-                "Proper sign up and login for user authentication"],
+      title : "Make treatment Easy",
+      about : ["Middleware between doctors and the patient",
+                "Features : doctor consultation, blood test any many more"],
       photo : './assets/projects/healthcrum2.jpg'
     },
     {
-      name : "Tourism",
+      name : "Quiz",
       uses : "MEAN Stack",
-      title : "Book you tour plan",
-      about : ["User can book there travelling plan according to their wish",
-                "Proper sign up and login for user authentication"],
-      photo : './assets/projects/quiz.jpg'
-    },
-    {
-      name : "Tourism",
-      uses : "MEAN Stack",
-      title : "Book you tour plan",
-      about : ["User can book there travelling plan according to their wish",
-                "Proper sign up and login for user authentication"],
-      photo : './assets/projects/tourism.jpg'
-    },
-    {
-      name : "Tourism",
-      uses : "MEAN Stack",
-      title : "Book you tour plan",
-      about : ["User can book there travelling plan according to their wish",
-                "Proper sign up and login for user authentication"],
-      photo : './assets/projects/healthcrum2.jpg'
-    },
-    {
-      name : "Tourism",
-      uses : "MEAN Stack",
-      title : "Book you tour plan",
-      about : ["User can book there travelling plan according to their wish",
-                "Proper sign up and login for user authentication"],
+      title : "Learn and compete",
+      about : ["Participants can enrole and give test from home",
+                  "Result send to the user mail after completion"],
       photo : './assets/projects/quiz.jpg'
     },
     {
