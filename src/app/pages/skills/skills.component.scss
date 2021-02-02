@@ -1,0 +1,25 @@
+.main{
+    min-height: 100vh;
+    background-image: url('../../../assets/background/2.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.top{
+    text-align: center;
+}
+.img-div{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+    max-height: 150px;
+    max-width: 150px;
+}
+.skills-div{
+    display: flex;
+    flex-wrap: wrap;
+}

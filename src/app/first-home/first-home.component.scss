@@ -22,17 +22,24 @@
     //height: 100vh;
     margin-top: -65px;
     background-image: url("../../assets/back2.jfif");
+    
+}
+
+.parallax{
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 .photo-div{
-    margin-top : 12%
+    margin-top : 12%;
 }
 
 .my-photo{
     height: 250px;
-    width: 350px;
+    width: 250px;
     border-radius: 50%;
     border: 4px solid grey;
 }
@@ -69,3 +76,5 @@
 .img-div{
     text-align: center;
 }
+
+

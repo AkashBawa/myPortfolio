@@ -33,14 +33,11 @@ export class FirstHomeComponent implements OnInit {
     })
     writer
       .type("Meet Akash Bawa")
-      //.rest(2000)
-      //.then(writer2.start())
       .then(writer2.start.bind(writer2))
       .start()
 
     writer2
       .type(this.myDetail)
-      //.rest(2000)
  }
 
  myDetail = `I am a student of B-tech CSE 3rd year. After discovering my passion for web development, I couldn’t get enough. I made websites for friends and family, interned with a local business, and hired myself out as a freelancer on upwork.

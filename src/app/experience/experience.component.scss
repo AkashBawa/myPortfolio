@@ -5,8 +5,9 @@ $red:#DC3D24;
 $yellow : #E3AE57;
 
 .main{
-    background-image: linear-gradient(#0D324D,#7F5A83);
-    margin: 50px 0;
+    background-image: url('../../assets/background/1.jpg');
+    background-attachment: fixed;
+
 }
 
 .company-img{
@@ -20,15 +21,11 @@ $yellow : #E3AE57;
 
 .top-row{
     margin-top: 25px;
-    span{
-        color: white;
-
-    }
 }
 
 .heading{
     text-align: center;
-    color: white;  
+    // color: white;  
 }
 .top-details{
     margin-top: 15px;
@@ -38,7 +35,7 @@ $yellow : #E3AE57;
     transition : transform .2s;
     transition-timing-function: ease-in;
     &:hover{
-        transform: scale(0.95);
+        // transform: scale(0.95);
     }
 }
 .about-work{
@@ -127,4 +124,24 @@ hr {
     .top-row{
         text-align: center;
     }
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px);
 }

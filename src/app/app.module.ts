@@ -17,8 +17,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import {TypedTextModule} from 'ngx-typed-text';
-import Typewriter from 't-writer.js'
+// import {TypedTextModule} from 'ngx-typed-text';
 import {MainService} from './main.service'
 import {MatTabsModule} from '@angular/material/tabs';
 import { AbilityComponent } from './pages/ability/ability.component';
@@ -48,11 +47,10 @@ import {AngularFittextModule} from 'angular-fittext';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    TypedTextModule,
+    // TypedTextModule,
     MatTabsModule,
     MatCardModule,
     AngularFittextModule
-    //Typewriter
   ],
   providers: [
     // TypewriterService, 
