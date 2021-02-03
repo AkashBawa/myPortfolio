@@ -19,7 +19,22 @@ export class ProjectComponent implements OnInit {
       title : "Make treatment Easy",
       about : ["Middleware between doctors and the patient",
                 "Features : doctor consultation, blood test any many more"],
-      photo : './assets/projects/healthcrum2.jpg'
+      photo : './assets/projects/healthcrum.png'
+    },
+    {
+      name : "Chatting app",
+      uses : "Web sockets",
+      title : "Chit chat",
+      about : ["User can exchange text and video messages",
+                "lastseen, typing, online features"],
+      photo : './assets/projects/chatting.png'
+    },
+    {
+      name : "Movie review",
+      uses : "MEAN stack",
+      title : "Rating your fav. movie",
+      about : ["user can app comment and rate the movie "],
+      photo : './assets/projects/movie.jpg'
     },
     {
       name : "Quiz",

@@ -1,35 +1,55 @@
 
 
 .main{
- // background-image: linear-gradient(#7F5A83,#0D324D);
-  // background-color: #923cb5;
-  // background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
-//   background-color: #2d3436;
-// background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
-  background-color : #000000;
-  // background-image : linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
-  background-image: url('../../../assets/background/2.jpg');
+ 
+  // background-color : #F7F7F7;
+  background-image: url('../../../assets/background/laptop.jpg');
   min-height: 100vh;
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 .first-row{
   margin : 50px 0;
   text-align: center;
-}
-.example-card{
-  margin-top: 100px;
-  background-image: linear-gradient(to right, #35184E, #F83131);
   color: white;
+  h1{
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  span{
+    line-height: 2;
+  }
+}
+.project-card{
+  // background-color: #F7F7F7;
+  cursor: pointer;
+  margin-bottom: 50px;
   transition : transform .2s;
   transition-timing-function: ease-in;
   &:hover{
-    transform: scale(0.95);
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+  }
+  height: 400px;
+}
+.project-name{
+
+  text-align: center;
+  
+  label{
+    font-weight: bold;
+    font-size: larger;
   }
 }
 
+  
+
 .image-div{
-  padding: 0 20px;
-  margin-top: -80px !important;
+
   .main-image{
     height: 160px;
   }
@@ -38,7 +58,7 @@
   text-align: center;
 }
 .mat-card-header-text{
-  width: 100% !important;
+  width: 100%;
 }
 .heading label {
   font-size: smaller;

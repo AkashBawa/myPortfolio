@@ -1,65 +1,25 @@
 <div class="container-fluid main">
-    <div class="top">
-        <div>
+    <div class="row top">
+        <div class="col-12">
             <h1>My Skills</h1>
         </div>
-        <div>
+        <div class="col-12">
             <span>Here all the skills in which I have an experienced and have strong hand</span>
         </div>
     </div>
     <div class="skills">
         <div class="skills-div row">
-            <div class="col-3">
+            <div class="col-6 col-lg-3" *ngFor="let skill of mySkills;index as i">
                 <div class="img-div">
-                    <img src="../../../assets/skills/angular.png"
+                    <img [src]=skill.image
                     class="image"
                     >
                 </div>
-                
+                <div class="skill-name">
+                    <span>{{skill.name}}</span>
+                </div>
             </div >
-            <div class="col-3">
-                <div class="img-div">
-                    <img src="../../../assets/skills/git.png"
-                        class="image"
-                    >
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="img-div">
-                    <img src="../../../assets/skills/javascript.png"
-                        class="image"
-                    >
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="img-div">
-                    <img src="../../../assets/skills/mongodb.png"
-                        class="image"
-                    >
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="img-div">
-                    <img src="../../../assets/skills/node.png"
-                        class="image"
-                    >
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="img-div">
-                    <img src="../../../assets/skills/react.png"
-                        class="image"
-                    >
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="img-div">
-                    <img src="../../../assets/skills/sql.png"
-                        class="image"
-                    >
-                </div>
-            </div>
-            
+           
         </div>
 
     </div>

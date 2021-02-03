@@ -4,9 +4,10 @@
       <div class="col-12">
         <div class="row  first-row">
           <div class="col-12">
-            <h1>My Projects</h1>
+            <h1>MY PROJECT</h1>
           </div>
-          <div class="col-12">
+          <div class="col-md-2"></div>
+          <div class="col-md-8 mt-4">
             <span>Here is the details of all my project on which I have work . While buildind these 
               I learn one thing that excitement of developing innovative is inimitable. 
             </span>
@@ -17,15 +18,20 @@
           <div class="col-md-10">
             <div class="row">
               <div class="col-md-4" *ngFor="let project of projects">
-                <mat-card class="example-card">
+                <mat-card class="project-card">
                   <div class="image-div">
-                    <img class="mat-elevation-z6 main-image" mat-card-image src="{{project.photo}}" 
+                    <img class=" main-image" mat-card-image src="{{project.photo}}" 
                     alt="Photo of a Shiba Inu">
+                  </div>
+                  <div class="project-name">
+                    <label class="project-name">
+                      {{project.name}} 
+                    </label>
                   </div>
                   <mat-card-header class="heading">
                     
                       <mat-card-title>
-                        {{project.name}}  
+                         
                         <div>
                           <label>{{project.uses}}</label>
                         </div>

@@ -1,6 +1,7 @@
 .main{
     min-height: 100vh;
-    background-image: url('../../../assets/background/2.jpg');
+    background-color: #e3e3e3;
+    // background-image: url('../../../assets/background/blur-city.jpg');
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -8,13 +9,22 @@
 }
 .top{
     text-align: center;
+    h1{
+        font-weight: bold;
+        text-decoration: underline;
+        margin-top: 30px;
+    }
+    span{
+        line-height: 2;
+    }
 }
 .img-div{
-    height: 250px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .image{
     max-height: 150px;
     max-width: 150px;
@@ -22,4 +32,16 @@
 .skills-div{
     display: flex;
     flex-wrap: wrap;
+}
+.skill-name{
+    text-align: center;
+    background-color: white;
+    margin: 0px 50px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width : 800px){
+    .skill-name{
+        margin: 0px 10px;
+    }
 }

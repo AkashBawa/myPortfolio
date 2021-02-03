@@ -1,5 +1,25 @@
-.container-fluid {
-  background : linear-gradient(#d9a7c7, #fffcdc);
+.main {
+  // background : linear-gradient(#d9a7c7, #fffcdc);
+  min-height: 100vh;
+  background-image: url('../../../assets/background/pencils.jpg');
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.first{
+  justify-content: center;
+  margin-bottom: 25px;
+  h1{
+    font-weight: bold;
+    text-align: center
+  }
+}
+
+.starting{
+  margin-top: 30px;
 }
 
 .background-white{
@@ -8,7 +28,15 @@
 }
 .ability-div{
   padding: 5px 25px;
+  width: 100%;
+  margin: 12px 150px;
   label {
     margin: auto;
+  }
+}
+
+@media only screen and (max-width : 800px){
+  .ability-div{
+    margin:  12px 10px;
   }
 }
