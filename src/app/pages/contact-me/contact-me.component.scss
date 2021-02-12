@@ -1,3 +1,49 @@
 .main{
     min-height: 100vh;
+    background-color: #E3E3E3;
+    // background-color: red;
+    background-image: url('../../../assets/background/dark.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.top-heading{
+    margin : 100px 100px 25px 100px;
+    text-align: center;
+    text-shadow: 2px 0px 5px blue;; 
+}
+
+.example-form{
+    background-color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 25px;
+}
+.example-full-width{
+    width: 100%;
+}
+.icon-div{
+    margin-bottom: 50px;
+}
+.img{
+    width: 60px;
+}
+
+.contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+}
+
+@media only screen and (max-width : 600px){
+    .top-heading{
+        margin: 100px 20px 25px 20px;
+        font-size: x-large;
+    }   
 }
